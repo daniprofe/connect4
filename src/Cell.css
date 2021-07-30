@@ -1,0 +1,48 @@
+.Cell {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+}
+
+.BoardCell {
+    background-color: rgb(139, 213, 241);
+}
+
+.Highlight {
+    background-color: rgb(48, 122, 150);
+}
+
+.Circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;   
+}
+
+.Token1 {
+    background-color: red;
+}
+
+.Token0 {
+    background-color: blue;
+}
+
+.Empty {
+    background-color: white;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+.IsLine {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
